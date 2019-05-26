@@ -1,0 +1,27 @@
+{
+  "name": "reddit-wrapper",
+  "version": "1.0.0",
+  "description": "Simple Reddit Wrapper for Public URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErKiran/reddit-wrapper.git"
+  },
+  "keywords": [
+    "Reddit_Wrapper",
+    "Nodejs",
+    "Reddit"
+  ],
+  "author": "Kiran Adhikari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ErKiran/reddit-wrapper/issues"
+  },
+  "homepage": "https://github.com/ErKiran/reddit-wrapper#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
