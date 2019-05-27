@@ -1,6 +1,6 @@
 {
   "name": "reddit-simple",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple Reddit Wrapper for Public URL",
   "main": "index.js",
   "scripts": {

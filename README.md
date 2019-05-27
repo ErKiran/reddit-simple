@@ -16,9 +16,9 @@ or Clone this repo
 ## Import
 
 ```js
-const {RedditWrapper} = require('reddit-simple')
+const {RedditSimple} = require('reddit-simple')
 or 
-import {RedditWrapper} from 'reddit-simple'
+import {RedditSimple} from 'reddit-simple'
 ```
 
 ## Usage
@@ -26,24 +26,24 @@ import {RedditWrapper} from 'reddit-simple'
 ### Get top post from r/ProgrammerHumor 😀😀
 
 ```js 
-RedditWrapper.TopPost('programmerHumor')
+RedditSimple.TopPost('programmerHumor')
 ```
 
 ### Get Random Post from r/freefolk 🔀🔀
 
 ```js
-RedditWrapper.RandomPost('freefolk')
+RedditSimple.RandomPost('freefolk')
 ```
 
 ### Get List of Subreddits 📚📚
 
 ```js
-RedditWrapper.SubReddit()
+RedditSimple.SubReddit()
 ```
 
 ### 🕵️‍♀️ 🕵️‍♂️Spy on Redditor 🕵️‍♀️ 🕵️‍♂️
 ```js
-RedditWrapper.SpyRedditor('dashuser')
+RedditSimple.SpyRedditor('dashuser')
 ```
 
 ## Example Usage
