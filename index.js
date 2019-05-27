@@ -1,6 +1,5 @@
 const RedditSimple = require('./src/index');
-const { test } = require('./test/api');
-console.log(test('Nepal'))
+console.log(RedditSimple.SpyRedditor('kiru0'));
 module.exports = {
     RedditSimple
 }
