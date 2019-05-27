@@ -1,5 +1,6 @@
-const RedditWrapper = require('./src/index');
-
+const RedditSimple = require('./src/index');
+const { test } = require('./test/api');
+console.log(test('Nepal'))
 module.exports = {
-    RedditWrapper
+    RedditSimple
 }

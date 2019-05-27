@@ -1,5 +1,4 @@
 const axios = require('axios');
-
 module.exports = {
     TopPost: async function TopPost(name) {
         const res = await axios.get(`https://www.reddit.com/r/${name}.json`);
@@ -7,7 +6,8 @@ module.exports = {
             return false;
         } else {
             const max = Math.max.apply(Math, res.data.data.children.map(i => i.data.ups));
-            const tosubmit = res.data.data.children.filter(i => i.data.ups == max)
+            const tosubmit = res.data.data.children.filter(i => i.data.ups == max);
+            //console.log(tosubmit);
             return tosubmit;
         }
     },
@@ -19,7 +19,8 @@ module.exports = {
             let max = [];
             max = res.data.data.children.map(i => i.data.ups);
             const rand = Math.floor(Math.random() * max.length);
-            const tosubmit = res.data.data.children.filter(i => i.data.ups == max[rand])
+            const tosubmit = res.data.data.children.filter(i => i.data.ups == max[rand]);
+            //console.log(tosubmit)
             return tosubmit;
         }
     },
@@ -32,6 +33,7 @@ module.exports = {
     },
     SpyRedditor: async function SpyRedditor(name) {
         const res = await axios.get(`https://www.reddit.com/user/${name}.json`);
+        console.log(res.data.data.children.map(i => i.data))
         return res.data.data.children.map(i => i.data);
     },
 }
