@@ -3,6 +3,9 @@ Simple Wrapper Over Reddit Public API for node js No Overhead No Auth Token
 
 ![Logo](http://i63.tinypic.com/2dc91t5.png)
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+
 ### Get it from npm
 
 `npm i reddit-simple`
