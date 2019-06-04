@@ -33,4 +33,9 @@ module.exports = {
         const res = await axios.get(`https://www.reddit.com/user/${name}.json`);
         return res.data.data.children.map(i => i.data);
     },
+    AllSubReddit: async function AllSubReddit() {
+        const res = await axios.get(`https://www.reddit.com/reddits.json`);
+        const subs = res.data.data.children.map(i => i.data.display_name);
+        return subs;
+    }
 }
