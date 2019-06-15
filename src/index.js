@@ -11,7 +11,7 @@ module.exports = {
         }
     },
     RandomPost: async function RandomPost(name) {
-        const res = await axios.get(`https://www.reddit.com/r/${name}.json`);
+        const res = await axios.get(`https://www.reddit.com/r/${name}.json?limit=100`);
         if (res.length == 0) {
             return false;
         } else {
@@ -23,7 +23,7 @@ module.exports = {
         }
     },
     SubReddit: async function SubReddit() {
-        const res = await axios.get(`https://www.reddit.com/reddits.json`);
+        const res = await axios.get(`https://www.reddit.com/reddits.json?limit=100`);
         const subs = res.data.data.children.map(i => i.data.display_name);
         const rand = Math.floor(Math.random() * subs.length);
         const recommend = subs[rand];
@@ -34,7 +34,7 @@ module.exports = {
         return res.data.data.children.map(i => i.data);
     },
     AllSubReddit: async function AllSubReddit() {
-        const res = await axios.get(`https://www.reddit.com/reddits.json`);
+        const res = await axios.get(`https://www.reddit.com/reddits.json?limit=100`);
         const subs = res.data.data.children.map(i => i.data.display_name);
         return subs;
     }
