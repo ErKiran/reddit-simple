@@ -10,11 +10,11 @@ Simple Wrapper Over Reddit Public API for node js No Overhead No Auth Token
 
 `npm i reddit-simple`
 
-[reddit-simple](https://www.npmjs.com/package/reddit-simple)
+[reddit-simple](/docs/images/reddit-simple.png)
 
 or Clone this repo
 
-![meme](http://i68.tinypic.com/rtg8ee.jpg)
+![meme](/docs/images/meme.jpeg)
 
 ## Import
 
