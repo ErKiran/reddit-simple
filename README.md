@@ -1,7 +1,7 @@
 # reddit-simple
 Simple Wrapper Over Reddit Public API for node js No Overhead No Auth Token 
 
-![Logo](http://i63.tinypic.com/2dc91t5.png)
+![Logo](/docs/images/reddit-simple.png)
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -10,7 +10,8 @@ Simple Wrapper Over Reddit Public API for node js No Overhead No Auth Token
 
 `npm i reddit-simple`
 
-[reddit-simple](/docs/images/reddit-simple.png)
+[reddit-simple](https://www.npmjs.com/package/reddit-simple)
+
 
 or Clone this repo
 
